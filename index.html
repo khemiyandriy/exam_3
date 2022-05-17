@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/photo_ico.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>anna.khem</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__top">
+            <span class="logo">anna.khem</span>
+            <nav class="nav">
+                <input type="checkbox" id="burger" class="nav__burger">
+                <label for="burger" class="nav__burger-img"></label>
+                <ul class="nav__list">
+                    <li class="nav__item"> <a href="#about_me" class="nav__link" onclick="slowScroll('#about_me')">Про мене</a> </li>
+                    <li class="nav__item"> <a href="#my_works" class="nav__link" onclick="slowScroll('#my_works')">Мої роботи</a> </li>
+                    <li class="nav__item"> <a href="#services" class="nav__link" onclick="slowScroll('#services')">Послуги</a> </li>
+                    <li class="nav__item"> <a href="#responses" class="nav__link" onclick="slowScroll('#responses')">Відгуки</a> </li>
+                    <li class="nav__item"> <a href="#contact" class="nav__link" onclick="slowScroll('#contact')">Контакти</a> </li>
+                </ul>
+            </nav>
+            <span class="social_icon">
+               <a href="https://www.facebook.com/profile.php?id=100010847374574"> <img src="./img/facebook_logo.svg" alt="facebook_logo" ></a> 
+               <a href="https://t.me/anna_khem"><img src="./img/twiter_logo.svg" alt="telegram_logo"></a> 
+               <a href="https://www.instagram.com/anna.khem/"><img src="./img/insta_logo.svg" alt="insta_logo"></a> 
+            </span>
+        </div>
+        <div class="header__data" id="about_me">
+            <div class="header__text">
+                <h1 class="title title_big">Привіт! Мене звати Аня, і я - фотограф!</h1>
+                <p class="text">Я фотографую більше 3 років, і за цей час я навчилася фотографувати так, що Ви скажете Вау! Для створення та обробки фотографій використовується лише професійна техніка. Ціни Вас приємно здивують.</p>
+                <p class="text text_highlight">Колекціонуйте моменти, а не речі, а я допоможу зберегти ці моменти на фото!</p>
+            </div>
+            <div class="header__img">
+            </div>
+            <div class="header__gradient_top"></div>
+            <div class="header__gradient_bottom"></div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section my_works" id="my_works">
+            <h2 class="title title_section">Мої роботи</h2>
+            <div class="gallery">
+                <div class="gallery__item gallery__item_big">
+                    <picture><source srcset="./img/my_work_1.webp" type="image/webp"><img src="./img/my_work_1.jpg" alt=""></picture>
+                </div>
+                <div class="gallery__item">
+                    <picture><source srcset="./img/my_work_2.webp" type="image/webp"><img src="./img/my_work_2.jpg" alt=""></picture>
+                </div>
+                <div class="gallery__item">
+                    <picture><source srcset="./img/my_work_3.webp" type="image/webp"><img src="./img/my_work_3.jpg" alt=""></picture>
+                </div>
+                <div class="gallery__item">
+                    <picture><source srcset="./img/my_work_4.webp" type="image/webp"><img src="./img/my_work_4.jpg" alt=""></picture>
+                </div>
+                <div class="gallery__item">
+                    <picture><source srcset="./img/my_work_5.webp" type="image/webp"><img src="./img/my_work_5.jpg" alt=""></picture>
+                </div>
+                <div class="gallery__item">
+                    <picture><source srcset="./img/my_work_6.webp" type="image/webp"><img src="./img/my_work_6.jpg" alt=""></picture>
+                </div>
+            </div>
+            <div class="gallery__more">
+                <div class="gallery__item gallery__item">
+                    <picture><source srcset="./img/my_work_7.webp" type="image/webp"><img src="./img/my_work_7.jpg" alt=""></picture>
+                </div>
+                <div class="gallery__item">
+                    <picture><source srcset="./img/my_work_8.webp" type="image/webp"><img src="./img/my_work_8.jpg" alt=""></picture>
+                </div>
+                <div class="gallery__item">
+                    <picture><source srcset="./img/my_work_9.webp" type="image/webp"><img src="./img/my_work_9.jpg" alt=""></picture>
+                </div>
+                <div class="gallery__item">
+                    <picture><source srcset="./img/my_work_10.webp" type="image/webp"><img src="./img/my_work_10.jpg" alt=""></picture>
+                </div>
+                <div class="gallery__item">
+                    <picture><source srcset="./img/my_work_11.webp" type="image/webp"><img src="./img/my_work_11.jpg" alt=""></picture>
+                </div>
+                <div class="gallery__item gallery__item_big2">
+                    <picture><source srcset="./img/my_work_12.webp" type="image/webp"><img src="./img/my_work_12.jpg" alt=""></picture>
+                </div>
+            </div>
+            <div class="my_works__button">
+                <button class="button gallery__button" onclick="showMore('.gallery__more')">Більше фото</button>
+            </div>
+            
+            <div class="my_works__gradient"></div>
+        </section>
+
+        <section class="section services" id="services">
+            <h2 class="title title_section">Послуги</h2>
+            <p class="text">
+                 Оберіть фотосесію, яка найбільше Вам підходить. Я допоможу Вам з вибором образу, одягу, місця проведення. Працюю в Івано-Фракнісвькій області, за домовленістю виїжджаю і в інші області. Всі фотографії будуть професійно оброблені перед віддачею. Готові фото завантажую на хмарне сховище або карту пам'яті. Додатково можу роздрукувати обрані вами фотографії чи виготовити фотоальбом. Можливе оформлення подарункового сертифікату.
+            </p>
+            <div class="services__gallery">
+                <div class="services__item">
+                    <div class="services__logo">
+                        <img src="./img/service_logo/love.svg" alt="">
+                    </div>
+                    <h3 class="title services__title">Love Story</h3>
+                    <p class="text">Краса потрібна нам, щоб нас любили чоловіки, а дурість — щоб ми любили чоловіків. (Коко Шанель) Кожна історія кохання - неповторна, збережи свою! </p>
+                </div>
+                <div class="services__item">
+                    <div class="services__logo">
+                        <img src="./img/service_logo/wedding_rings.svg" alt="">
+                    </div>
+                    <h3 class="title services__title">Весілля</h3>
+                    <p class="text">У романах все закінчується весіллям, а в житті, навпаки, все з весілля тільки й починається. Фото з цього дня будуть дивитися твої внуки.</p>
+                </div>
+                <div class="services__item">
+                    <div class="services__logo">
+                        <img src="./img/service_logo/pregnant_women.svg" alt="">
+                    </div>
+                    <h3 class="title services__title">Вагітна фотосесія</h3>
+                    <p class="text">Цей хвилюючий і водночас прекрасний момент чекає кожна сім'я. Так зароджується нове життя.</p>
+                </div>
+                <div class="services__item">
+                    <div class="services__logo">
+                        <img src="./img/service_logo/baby.svg" alt="">
+                    </div>
+                    <h3 class="title services__title">Хрещення</h3>
+                    <p class="text">На цій фотосесії найбільше хвилюються хрещені батьки, бо часто ні молитву добре не знають, ні дитину ніколи не тримали</p>
+                </div>
+                <div class="services__item">
+                    <div class="services__logo">
+                        <img src="./img/service_logo/birthday_cake.svg" alt="">
+                    </div>
+                    <h3 class="title services__title">День народження</h3>
+                    <p class="text">Деколи події з дня народження можна відтворити лише по фотографіях. Зроби так, щоб було на що подивитися.</p>
+                </div>
+                <div class="services__item">
+                    <div class="services__logo">
+                        <img src="./img/service_logo/family.svg" alt="">
+                    </div>
+                    <h3 class="title services__title">Сімейна фотосесія</h3>
+                    <p class="text">Хороший подарунок для будь-кого. Свіжі сімейні фото завжди приємно бачити у фотоколажі на стіні оселі.</p>
+                </div>
+                <div class="services__item">
+                    <div class="services__logo">
+                        <img src="./img/service_logo/portrait.svg" alt="">
+                    </div>
+                    <h3 class="title services__title">Індивідуальна фотосесія</h3>
+                    <p class="text">Коли Вам потрібні хороші фото для портфоліо, соцмереж, коханої людини яка далеко чи просто для Себе.</p>
+                </div>
+                <div class="services__item">
+                    <div class="services__logo">
+                        <img src="./img/service_logo/food.svg" alt="">
+                    </div>
+                    <h3 class="title services__title">Предметна фотосесія</h3>
+                    <p class="text">Сфотографую машину, нерухомість, їжу, дорогоцінності, аникваріат чи будь що інше для продажі чи реклами.</p>
+                </div>
+                <div class="services__item">
+                    <div class="services__logo">
+                        <img src="./img/service_logo/christmas_tree.svg" alt="">
+                    </div>
+                    <h3 class="title services__title">Новорічна фотосесія</h3>
+                    <p class="text">Під нарядженою ялинкою у фотостудії, вдома біля каміна чи на снігу - під новий рік завжди хочеться новорічний фото. </p>
+                </div>
+            </div>
+            <div class="services__gradient"></div>
+        </section>
+
+        <section class="section responses" id="responses">
+            <h2 class="title title_section">Відгуки</h2>
+            <div class="responses__slider">
+                <div class="slider__item">
+                    <picture><source srcset="./img/responses/v1.webp" type="image/webp"><img src="./img/responses/v1.jpg" alt="response"></picture>
+                </div>
+                <div class="slider__item">
+                    <picture><source srcset="./img/responses/v2.webp" type="image/webp"><img src="./img/responses/v2.jpg" alt="response"></picture> 
+                </div>
+                <div class="slider__item">
+                    <picture><source srcset="./img/responses/v3.webp" type="image/webp"><img src="./img/responses/v3.jpg" alt="response"></picture>
+                </div>
+                <div class="slider__item">
+                    <picture><source srcset="./img/responses/v4.webp" type="image/webp"><img src="./img/responses/v4.jpg" alt="response"></picture>
+                </div>
+                <div class="slider__item">
+                    <picture><source srcset="./img/responses/v5.webp" type="image/webp"><img src="./img/responses/v5.jpg" alt="response"></picture>
+                </div>
+                <div class="slider__item">
+                    <picture><source srcset="./img/responses/v6.webp" type="image/webp"><img src="./img/responses/v6.jpg" alt="response"></picture>
+                </div>
+            </div>
+            <div class="responses__gradient"></div>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div>
+            <span class="logo footer__logo">anna.khem</span>
+            <div class="footer__img">
+            </div>
+        </div>
+        <div class="footer__form">
+                <form id="contact-form" class="form">
+                <fieldset>
+                <legend class="form__legend">Є питання? Напиши!</legend>
+                </fieldset>
+                <input type="hidden" name="contact_number">
+                <input type="text" name="user_name" placeholder="Ім'я" required>
+                <input type="email" name="user_email" placeholder="Email" required>
+                <textarea name="message" rows="5" placeholder="Повідомлення" required></textarea>
+                <input type="submit" value="Надіслати" class="button">  
+            </form>
+        </div>
+        <div class="footer__soc">
+                <a href="https://www.facebook.com/profile.php?id=100010847374574"> <img src="./img/facebook_logo.svg" alt="facebook_logo" ></a> 
+                <a href="https://t.me/anna_khem"><img src="./img/twiter_logo.svg" alt="twiter_logo"></a> 
+                <a href="https://www.instagram.com/anna.khem/"><img src="./img/insta_logo.svg" alt="insta_logo"></a> 
+                <a href="#header" onclick="slowScroll('#header')"><img  class="to_top" src="./img/arrow_to_top.svg" alt=""></a>
+        </div>
+        
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
