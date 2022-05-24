@@ -98,7 +98,9 @@ body {
   width: 160px;
   background-image: url(../img/vawe.png);
   top: -25px;
-  left: 43%;
+  left: 50%;
+  -webkit-transform: translatex(-50%);
+  transform: translatex(-50%);
 }
 
 .text {
@@ -265,7 +267,7 @@ a:hover {
 .gallery__more,
 .gallery {
   display: grid;
-  grid-template: repeat(3, 300px)/repeat(3, 1fr);
+  grid-template: 300px 300px 300px/1fr 1fr 1fr;
   gap: 50px;
   margin: 50px 0;
 }
@@ -658,12 +660,8 @@ a:hover {
     margin: 20px;
   }
 
-  .title_section::before {
-    left: 37vw;
-  }
-
   .gallery__more, .gallery {
-    grid-template: repeat(5, 300px)/repeat(2, 1fr);
+    grid-template: 300px 300px 300px 300px 300px/1fr 1fr;
   }
 
   .gallery__item_big2 {
