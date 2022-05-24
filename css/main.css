@@ -81,7 +81,13 @@ body {
   margin: 20px 0;
 }
 .title_section {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: auto;
   position: relative;
   margin: 20px 0;
 }
@@ -675,10 +681,6 @@ a:hover {
 @media (max-width: 767.98px) {
   .section {
     margin: 0;
-  }
-
-  .title_section::before {
-    left: 30vw;
   }
 }
 @media (max-width: 1200px) {
